@@ -1,0 +1,115 @@
+/* Styles for the overall footer element */
+footer {
+    width: 100%; /* Ensures the footer spans the full width of the page */
+    border-top: 1px solid #0e0e0e; /* Adds a top border for visual separation */
+    background-color: #333232; /* Dark background for the footer */
+    color: white; /* Sets text color to white for contrast */
+}
+
+/* Removes underline from all links */
+a {
+    text-decoration: none;
+}
+
+/* Removes default list styling for unordered lists */
+ul {
+    list-style: none;
+}
+
+/* Container for the main footer content */
+.footer-container {
+    max-width: 1500px; /* Maximum width for larger screens */
+    width: 90%; /* Responsive width for smaller screens */
+    margin: 0px auto; /* Centers the container horizontally */
+    padding: 25px 0px; /* Vertical padding for spacing */
+    display: flex; /* Uses flexbox layout */
+    justify-content: space-between; /* Distributes space evenly between items */
+    align-items: flex-start; /* Aligns items at the start of the cross-axis */
+}
+
+/* Styles for specific footer sections */
+.footer-company-box,
+.footer-subscribe {
+    max-width: 330px; /* Limits the width of these sections */
+}
+
+/* Styles for the logo within the company box */
+.footer-company-box .footer-logo {
+    color: black; /* Sets text color to black */
+    font-size: 1.8rem; /* Larger font size for emphasis */
+    text-transform: uppercase; /* Uppercases all text */
+    font-weight: 900; /* Makes the text bold */
+}
+
+/* Styles for paragraphs within company and subscribe boxes */
+.footer-company-box p,
+.footer-subscribe p {
+    margin: 5px 0px; /* Adds vertical spacing between paragraphs */
+    line-height: 1.6rem; /* Sets line height for readability */
+    font-size: 1rem; /* Standard font size */
+}
+
+/* Styles for bold text in link and subscribe boxes */
+.footer-link-box strong,
+.footer-subscribe strong {
+    font-size: 1.2rem; /* Slightly larger font size */
+    font-weight: 600; /* Makes the text bold */
+}
+
+/* Adds top margin to lists in link boxes */
+.footer-link-box ul {
+    margin-top: 5px;
+}
+
+/* Styles for links within the footer container */
+.footer-container ul li a {
+    display: flex; /* Uses flexbox to align items */
+    margin-bottom: 5px; /* Adds bottom margin for spacing */
+    transition: all ease 0.3s; /* Smooth transition for hover effects */
+    font-weight: 500; /* Semi-bold text */
+    text-decoration: none; /* Removes underline */
+}
+
+/* Styles for the bottom section of the footer */
+.footer-bottom {
+    display: flex; /* Uses flexbox layout */
+    justify-content: space-between; /* Distributes space evenly */
+    align-items: center; /* Centers items vertically */
+    flex-wrap: wrap; /* Allows items to wrap onto new lines */
+    grid-gap: 10px; /* Adds spacing between grid items */
+    border-top: 1px solid #e9e9e9; /* Adds a separating border */
+    padding: 20px 0px; /* Vertical padding for spacing */
+    max-width: 1200px; /* Limits container width */
+    width: 90%; /* Responsive width for smaller screens */
+    margin: auto; /* Centers horizontally */
+    color: white; /* Sets text color to white */
+}
+
+/* Styles for text elements within the footer bottom */
+.footer-bottom span {
+    font-size: 0.9rem; /* Smaller font size for footer details */
+}
+
+/* Styles for the footer logo */
+.footer-logo {
+    padding-left: 3rem; /* Adds left padding */
+    font-family: 'Archicoco', sans-serif; /* Custom font family */
+    text-decoration: none; /* Removes underline */
+    color: white; /* Sets text color to white */
+}
+
+/* Media query for screens smaller than 1200px */
+@media(max-width:1200px) {
+    .footer-container {
+        display: grid; /* Switches to grid layout */
+        grid-template-columns: 1fr 1fr; /* Two-column layout */
+        grid-gap: 40px; /* Spacing between grid items */
+    }
+}
+
+/* Media query for screens smaller than 620px */
+@media(max-width:620px) {
+    .footer-container {
+        grid-template-columns: 1fr; /* Single-column layout */
+    }
+}

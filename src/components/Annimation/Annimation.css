@@ -1,0 +1,68 @@
+/* Basic reset for body to remove default padding and margin */
+body {
+    padding: 0;
+    margin: 0;
+    background-color: white; /* Sets a light background color */
+}
+
+/* Styles for the slider frame */
+.slider-frame {
+    overflow: hidden; /* Hides overflow content for a clean look */
+    height: 800px; /* Sets the height of the slider */
+    width: 1200px; /* Sets the width of the slider */
+    margin: 20px auto; /* Centers the frame horizontally on the page */
+}
+
+/* Keyframes for the slide animation on WebKit browsers */
+@-webkit-keyframes slide_animation {
+    0% { transform: translateX(0); } /* Start at first image */
+    25% { transform: translateX(0); } /* Hold the first image */
+    33% { transform: translateX(-1200px); } /* Slide to second image */
+    58% { transform: translateX(-1200px); } /* Hold the second image */
+    66% { transform: translateX(-2400px); } /* Slide to third image */
+    91% { transform: translateX(-2400px); } /* Hold the third image */
+    100% { transform: translateX(0); } /* Return to first image */
+}
+
+/* Keyframes for the slide animation for all browsers */
+@keyframes slide_animation {
+    0% { transform: translateX(0); } /* Start at first image */
+    25% { transform: translateX(0); } /* Hold the first image */
+    33% { transform: translateX(-1200px); } /* Slide to second image */
+    58% { transform: translateX(-1200px); } /* Hold the second image */
+    66% { transform: translateX(-2400px); } /* Slide to third image */
+    91% { transform: translateX(-2400px); } /* Hold the third image */
+    100% { transform: translateX(0); } /* Return to first image */
+}
+
+/* Container for sliding images */
+.slide-images {
+    width: 3600px; /* Width to accommodate three images side by side */
+    height: 800px; /* Sets height to match the frame */
+    display: flex; /* Aligns images horizontally */
+    margin: 0; /* Removes default margin */
+    
+    /* Applying slide animation */
+    -webkit-animation-name: slide_animation;
+    animation-name: slide_animation;
+    -webkit-animation-duration: 33s; /* Duration of one complete cycle */
+    animation-duration: 33s; /* Duration of one complete cycle */
+    -webkit-animation-iteration-count: infinite; /* Loops the animation infinitely */
+    animation-iteration-count: infinite; /* Loops the animation infinitely */
+    animation-direction: normal; /* Plays animation in the normal direction */
+}
+
+/* Styles for individual image containers */
+.img-container {
+    height: 800px; /* Matches the height of the slider frame */
+    width: 1200px; /* Width of each image to match the frame width */
+    position: relative; /* Allows positioning within the container */
+    flex: none; /* Prevents flex items from shrinking */
+}
+
+/* Styles for images within the container */
+.img-container img {
+    width: 100%;  /* Image fills the entire width of the container */
+    height: 100%; /* Image fills the entire height of the container */
+    object-fit: cover;  /* Maintains aspect ratio, covers the entire container */
+}

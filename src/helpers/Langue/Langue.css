@@ -1,0 +1,26 @@
+  .language-switcher {
+    margin-bottom: 20px;
+  }
+  
+  .language-switcher button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .language-switcher button.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+  }
+  
+  .language-switcher button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .content {
+    font-size: 18px;
+  }

@@ -1,0 +1,16 @@
+/* Tailwind's dark mode */
+.dark body {
+    background-color: #292929;
+    color: #F7FFFF;
+}
+
+body {
+    background-color: #F7FFFF;
+    color: #292929;
+}
+body.dark a {
+    color: #F7FFFF; /* Ensures the links appear white in dark mode */
+}
+body.light a {
+    color: #292929; /* Ensures the links appear black in light mode */
+}
