@@ -23,5 +23,6 @@ Here’s a screenshot of the app:
 ### Build And Run
 
 1. Install dependencies:
+   - cd logtandem
    - npm install
    - npm start
