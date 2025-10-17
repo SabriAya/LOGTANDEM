@@ -37,7 +37,7 @@ body {
 
 /* Container for sliding images */
 .slide-images {
-    width: 3600px; /* Width to accommodate three images side by side */
+    width: 100%; /* Width to accommodate three images side by side */
     height: 800px; /* Sets height to match the frame */
     display: flex; /* Aligns images horizontally */
     margin: 0; /* Removes default margin */

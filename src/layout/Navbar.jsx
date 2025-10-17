@@ -1,6 +1,7 @@
 import React from 'react'
-import logo from '../assets/logo.jpg';
 import { Link } from 'react-router-dom';
+
+import logo from '../assets/logo.jpg';
 import DarkMode from '../helpers/DarkMode/DarkMode'
 //import Langue from '../helpers/Langue/Langue'
 
@@ -18,4 +19,4 @@ function Navbar() {
   )
 }
 
-export default Navbar
+export default Navbar;
