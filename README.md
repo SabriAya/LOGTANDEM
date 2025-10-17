@@ -11,7 +11,7 @@ It allows users to discover the LOGTANDEM International office and its features.
 
 ## Preview
 Here’s a screenshot of the app:
-![Logtandem Screenshot](https://github.com/SabriAya/javascript-projects/blob/main/calculator.png?raw=true)
+![Logtandem Screenshot](https://github.com/SabriAya/LOGTANDEM/blob/main/logtandem.png?raw=true)
 ## How to Run the Project Locally:
  ### Getting Started
 
